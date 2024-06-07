@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector JQuery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <style>
+      .line {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Selector Jquery-3</h1>
+      <p>Paragraf 1</p>
+      <p id="target">Paragraf 2</p>
+      <p>Paragraf 3</p>
+      <p>Paragraf 4</p>
+    </div>
+    <button onclick="ubah()">ubah</button>
+    <script>
+      const ubah = () => {
+        $("p").addClass("line");
+      };
+    </script>
+  </body>
+</html>
